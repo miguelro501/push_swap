@@ -10,9 +10,11 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = push_swap.a
+NAME = push_swap
 
-SRCS = push_swap.c \
+SRCS = push_swap.c  operations.c\
+
+gcc -Wall -Wextra -Werror push_swap.c operations.c utils.c sort_3.c sort_5.c | .\a.exe
 
 OBJS =	$(SRCS:.c=.o)
 
