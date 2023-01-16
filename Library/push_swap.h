@@ -6,7 +6,7 @@
 /*   By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 17:01:52 by marvin            #+#    #+#             */
-/*   Updated: 2023/01/12 12:44:57 by miguelro         ###   ########.fr       */
+/*   Updated: 2023/01/16 17:35:26 by miguelro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,3 +43,8 @@ void    print(t_stack *stack_a, t_stack *stack_b);
 void    sort_5(t_stack *stack_a, t_stack *stack_b);
 int     *sorted_array(t_stack *stack);
 void    sort_100(t_stack *stack_a, t_stack *stack_b);
+void	sort_500(t_stack *stack_a, t_stack *stack_b);
+int sorted_check(t_stack *stack);
+void sort_block(t_stack *stack_a, t_stack *stack_b);
+void make_block(t_stack *stack_a, t_stack *stack_b, int block_top, int block_buttom);
+void arr_sort(int arr[], int n);

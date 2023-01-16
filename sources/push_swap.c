@@ -6,7 +6,7 @@
 /*   By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 16:59:26 by marvin            #+#    #+#             */
-/*   Updated: 2023/01/12 14:11:03 by miguelro         ###   ########.fr       */
+/*   Updated: 2023/01/16 17:33:27 by miguelro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,12 @@ int main(int ac, char **av)
     //sort_3(stack_a);
     //print(stack_a,stack_b);
     //sort_5(stack_a, stack_b);
-	if ( stack_a->max_size <= 5)
+	if (stack_a->max_size <= 5)
 		sort_5(stack_a,stack_b);
-    else
+    else if (stack_a->max_size <= 200)
 		sort_100(stack_a, stack_b);
+	else
+		sort_500(stack_a, stack_b);
     //print(stack_a,stack_b);
     //printf("%d ", calculate_median(stack_a));
 

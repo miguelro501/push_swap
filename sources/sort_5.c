@@ -6,7 +6,7 @@
 /*   By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 15:07:02 by marvin            #+#    #+#             */
-/*   Updated: 2023/01/12 12:44:41 by miguelro         ###   ########.fr       */
+/*   Updated: 2023/01/16 17:36:10 by miguelro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,14 +38,14 @@ void	arrange_smaller(t_stack *stack_a, t_stack *stack_b)
 		push_stack(stack_a, stack_b);
 		push_stack(stack_a, stack_b);
 	}
-	else if (stack_b->value[0] > stack_a -> value[stack_a->size] && stack_b->value[1] > stack_a -> value[stack_a->size])
+	else if (stack_b->value[0] > stack_a -> value[stack_a->size - 1] && stack_b->value[1] > stack_a -> value[stack_a->size - 1])
 	{	
 		if (stack_b->value[0] < stack_b->value[1])
 			rotate_stack(stack_b);
 		push_stack(stack_a, stack_b);
 		push_stack(stack_a, stack_b);
-		reverse_rotate_stack(stack_a);
-		reverse_rotate_stack(stack_a);
+		rotate_stack(stack_a);
+		rotate_stack(stack_a);
 	}
 	else 
 	{

@@ -6,13 +6,12 @@
 #    By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/28 17:00:30 by marvin            #+#    #+#              #
-#    Updated: 2023/01/12 12:49:08 by miguelro         ###   ########.fr        #
+#    Updated: 2023/01/16 17:37:23 by miguelro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
 
-#gcc -Wall -Wextra -Werror push_swap.c operations.c utils.c sort_3.c sort_5.c | .\a.exe
 
 CC = gcc
 RM = rm -f
@@ -30,7 +29,7 @@ SRC_PATH = ./sources
 
 OBJ_PATH = ./objects
 
-SRC_NAME = push_swap.c operations.c utils.c sort_3.c sort_5.c sort_100.c\
+SRC_NAME = push_swap.c operations.c utils.c sort_3.c sort_5.c sort_100.c sort_500.c\
 
 OBJS = $(addprefix $(OBJ_PATH)/, $(SRC_NAME:.c=.o))
 
