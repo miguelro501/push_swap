@@ -6,7 +6,7 @@
 #    By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/28 17:00:30 by marvin            #+#    #+#              #
-#    Updated: 2023/01/16 17:37:23 by miguelro         ###   ########.fr        #
+#    Updated: 2023/01/27 17:45:39 by miguelro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = push_swap
 
 CC = gcc
 RM = rm -f
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g
 
 LIBFT = ./Library/Libft/libft.a
 LIBFT_PATH = ./Library/Libft
