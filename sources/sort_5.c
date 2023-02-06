@@ -6,7 +6,7 @@
 /*   By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 15:07:02 by marvin            #+#    #+#             */
-/*   Updated: 2023/01/27 17:20:00 by miguelro         ###   ########.fr       */
+/*   Updated: 2023/02/05 17:07:42 by miguelro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ void	arrange_smaller_aux(t_stack *stack_a, t_stack *stack_b)
 	push_stack(stack_a, stack_b);
 	rotate_stack(stack_a);
 	rotate_stack(stack_a);
-
 }
 
 void	arrange_smaller(t_stack *stack_a, t_stack *stack_b)
@@ -66,6 +65,14 @@ void	sort_5(t_stack *stack_a, t_stack *stack_b)
 {
 	if (stack_a->max_size != stack_b->max_size)
 		return ;
+	if (stack_a->max_size == 1)
+		return ;
+	if (stack_a->max_size == 2)
+	{
+		if (stack_a->value[0] > stack_a->value[1])
+			swap_stack(stack_a);
+		return ;
+	}
 	if (stack_a->max_size == 3)
 	{
 		sort_3(stack_a);

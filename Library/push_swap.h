@@ -6,22 +6,22 @@
 /*   By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 17:01:52 by marvin            #+#    #+#             */
-/*   Updated: 2023/01/27 16:09:26 by miguelro         ###   ########.fr       */
+/*   Updated: 2023/02/05 17:15:46 by miguelro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-
-#include <limits.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include "Printf/ft_printf.h"
+# include "Libft/libft.h"
+# include "Printf/ft_printf.h"
+# include <limits.h>
+# include <stdio.h>
+# include <stdlib.h>
 
 typedef struct s_stack
 {
-	int		*value;
+	long	*value;
 	int		size;
 	int		max_size;
 	char	name;
@@ -49,7 +49,8 @@ void		sort_500(t_stack *stack_a, t_stack *stack_b);
 int			sorted_check(t_stack *stack);
 void		sort_block(t_stack *stack_a, t_stack *stack_b);
 void		make_block(t_stack *stack_a, t_stack *stack_b, int block_top,
-				int block_buttom);
+				int block_buttom); //spell check
 void		arr_sort(int arr[], int n);
+void		error(t_stack *stack_a, t_stack *stack_b);
 
 #endif

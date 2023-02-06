@@ -6,7 +6,7 @@
 /*   By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 17:31:51 by miguelro          #+#    #+#             */
-/*   Updated: 2023/01/27 18:04:19 by miguelro         ###   ########.fr       */
+/*   Updated: 2023/02/05 16:41:29 by miguelro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,9 +46,7 @@ void	sort_500(t_stack *stack_a, t_stack *stack_b)
 			block += stack_a->size - block;
 		else
 			block += block_size;
-
 		make_block(stack_a, stack_b, block, previous_blocks);
-
 		sort_block(stack_a, stack_b);
 		previous_blocks = block;
 		if (!move_to_top(stack_a))
